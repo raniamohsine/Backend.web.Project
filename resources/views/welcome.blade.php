@@ -16,6 +16,9 @@
             <div class="space-x-4">
                 <a href="/login" class="hover:underline">Inloggen</a>
                 <a href="/register" class="hover:underline">Registreren</a>
+                <a href="/news" class="hover:underline">Nieuwtjes</a>
+                <a href="/faq" class="hover:underline">FAQ</a>
+                <a href="/contact" class="hover:underline">Contact</a>
                 <a href="/users/1"
                    class="bg-white text-green-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">
                     Publiek profiel
