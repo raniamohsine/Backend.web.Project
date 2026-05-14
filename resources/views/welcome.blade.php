@@ -41,20 +41,17 @@
     </section>
 
     <!-- Profile Card -->
-    <section class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-6 mb-20">
-        <img src="https://via.placeholder.com/150"
-             alt="Profile picture"
-             class="w-32 h-32 rounded-full mx-auto mb-4">
+    
+    <p class="text-center text-gray-600 mb-4">
+        Middenvelder • België
+    </p>
+    
+    <p class="text-gray-700 text-center">
+        Gepassioneerde voetbalster en lid van de community.
+    </p>
+    
 
-        <h3 class="text-2xl font-bold text-center">Rania Mohsine</h3>
-
-        <p class="text-center text-gray-600 mb-4">
-            Midfielder • Belgium
-        </p>
-
-        <p class="text-gray-700 text-center">
-            Passionate football player and community member.
-        </p>
+      
     </section>
 
 </body>

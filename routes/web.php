@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicProfileController;
 use App\Models\User;
+use App\Models\NewsItem;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -37,5 +38,13 @@ Route::get('/profile-test', function () {
 
 Route::get('/users/{user}', [PublicProfileController::class, 'show'])
     ->name('public.profile');
+
+    Route::get('/news', function () {
+        $newsItems = NewsItem::all();
+
+        return view('news.index', [
+            'newsItems' => $newsItems,
+        ]);
+    });
 
     
