@@ -1,4 +1,4 @@
-git status<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -8,14 +8,16 @@ git status<!DOCTYPE html>
 </head>
 <body class="bg-gray-100">
 
-    <!-- Navigatie -->
+    <!-- Navigation -->
     <nav class="bg-green-700 text-white shadow-lg">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold">Football Community</h1>
+
             <div class="space-x-4">
                 <a href="/login" class="hover:underline">Inloggen</a>
                 <a href="/register" class="hover:underline">Registreren</a>
-                <a href="/users/1" class="bg-white text-green-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">
+                <a href="/users/1"
+                   class="bg-white text-green-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">
                     Publiek profiel
                 </a>
             </div>
@@ -23,49 +25,37 @@ git status<!DOCTYPE html>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-green-700 text-white py-20">
-        <div class="max-w-4xl mx-auto text-center px-6">
-            <h2 class="text-5xl font-bold mb-6">
-                Welkom bij de Football Community
-            </h2>
-            <p class="text-xl mb-8">
-                Deel je passie voor voetbal, ontdek spelersprofielen en connecteer met andere voetballiefhebbers.
-            </p>
-            <a href="/register"
-               class="bg-white text-green-700 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100">
-                Start nu
-            </a>
-        </div>
+    <section class="text-center py-20 px-6">
+        <h2 class="text-5xl font-bold text-gray-800 mb-6">
+            Welkom bij de Football Community ⚽
+        </h2>
+
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Ontdek spelersprofielen, deel berichten en volg andere voetballiefhebbers.
+        </p>
+
+        <a href="/register"
+           class="bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-800">
+            Word lid
+        </a>
     </section>
 
-    <!-- Features -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h3 class="text-3xl font-bold text-center mb-12">Wat kan je doen?</h3>
+    <!-- Profile Card -->
+    <section class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-6 mb-20">
+        <img src="https://via.placeholder.com/150"
+             alt="Profile picture"
+             class="w-32 h-32 rounded-full mx-auto mb-4">
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-100 p-8 rounded-xl shadow">
-                    <h4 class="text-xl font-bold mb-4"> Profielen</h4>
-                    <p>Bekijk publieke profielen van andere gebruikers.</p>
-                </div>
+        <h3 class="text-2xl font-bold text-center">Rania Mohsine</h3>
 
-                <div class="bg-gray-100 p-8 rounded-xl shadow">
-                    <h4 class="text-xl font-bold mb-4"> Favoriete Clubs</h4>
-                    <p>Toon jouw favoriete club en spelers.</p>
-                </div>
+        <p class="text-center text-gray-600 mb-4">
+            Midfielder • Belgium
+        </p>
 
-                <div class="bg-gray-100 p-8 rounded-xl shadow">
-                    <h4 class="text-xl font-bold mb-4"> Community</h4>
-                    <p>Maak contact met andere voetbalfans.</p>
-                </div>
-            </div>
-        </div>
+        <p class="text-gray-700 text-center">
+            Passionate football player and community member.
+        </p>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6">
-        <p>&copy; 2026 Football Community - Gemaakt door Rania Mohsine</p>
-    </footer>
 
 </body>
 </html>
