@@ -7,22 +7,26 @@ use App\Models\NewsItem;
 
 class NewsItemSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         NewsItem::create([
-            'title'=>'Nieuwe speler toegevoegd',
-            'image'=> null,
-            'content' => 'Welkom aan onze nieuwe middenvelder.',
+            'title' => 'Nieuw seizoen gestart',
+            'image' => null,
+            'content' => 'Het nieuwe voetbalseizoen is gestart. Leden kunnen zich registreren en de community volgen.',
             'publication_date' => now(),
         ]);
 
-        NewsItem::creatz([
-            'title'=> 'Wedstrijd gewonnen',
+        NewsItem::create([
+            'title' => 'Nieuwe leden welkom',
             'image' => null,
-            'content' => 'Onze ploeg won met 3-1.',
+            'content' => 'Football Community verwelkomt nieuwe voetballiefhebbers die graag profielen en nieuwtjes willen volgen.',
+            'publication_date' => now(),
+        ]);
+
+        NewsItem::create([
+            'title' => 'Training van de week',
+            'image' => null,
+            'content' => 'Deze week ligt de focus op teamwork, passing en communicatie op het veld.',
             'publication_date' => now(),
         ]);
     }

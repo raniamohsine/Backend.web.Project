@@ -12,17 +12,15 @@
 
         <!-- Emoji voetbal -->
         <div class="text-6xl mb-4">⚽</div>
-
-        <h1 class="text-3xl font-bold text-gray-800">
-            Rania Mohsine
-        </h1>
+        <h1 class="text-2xl font-bold text-gray-800">Publiek profiel</h1>
+        <h1 class="textxl font-bold text-gray--
 
         <p class="text-gray-500 mt-2">
             Middenvelder • België
         </p>
 
         <p class="mt-4 text-gray-600">
-            Gepassioneerde voetbalster en lid van de community.
+             Dit is een voorbeeld van een publiek ledenprofiel binnen de Football Community.
         </p>
 
         <div class="mt-6">
