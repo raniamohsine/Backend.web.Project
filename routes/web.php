@@ -1,12 +1,15 @@
 <?php
 
 // ========================================
-// Controllers en models importeren
+// Controllers importeren
 // ========================================
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicProfileController;
-use App\Models\NewsItem;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\ContactController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -36,7 +39,7 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
 
-    // Toon het formulier om profiel te bewerken
+    // Toon profiel bewerken pagina
     Route::get('/profile', [ProfileController::class, 'edit'])
         ->name('profile.edit');
 
@@ -44,7 +47,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])
         ->name('profile.update');
 
-    // Verwijder het profiel
+    // Verwijder profiel
     Route::delete('/profile', [ProfileController::class, 'destroy'])
         ->name('profile.destroy');
 });
@@ -54,7 +57,7 @@ Route::middleware('auth')->group(function () {
 // Publieke profielpagina
 // ========================================
 
-// Toon het publieke profiel van een gebruiker
+// Toon publiek profiel van gebruiker
 Route::get('/users/{user}', [PublicProfileController::class, 'show'])
     ->name('public.profile');
 
@@ -64,37 +67,26 @@ Route::get('/users/{user}', [PublicProfileController::class, 'show'])
 // ========================================
 
 // Toon alle nieuwsartikelen
-Route::get('/news', function () {
-
-    // Haal alle nieuwsitems op uit de database
-    $newsItems = NewsItem::all();
-
-    // Stuur de nieuwsitems naar de view
-    return view('news.index', [
-        'newsItems' => $newsItems,
-    ]);
-
-});
+Route::get('/news', [NewsController::class, 'index'])
+    ->name('news.index');
 
 
 // ========================================
 // FAQ pagina
 // ========================================
 
-// Toon de FAQ pagina
-Route::get('/faq', function () {
-    return view('faq');
-});
+// Toon FAQ pagina
+Route::get('/faq', [FaqController::class, 'index'])
+    ->name('faq.index');
 
 
 // ========================================
 // Contact pagina
 // ========================================
 
-// Toon het contactformulier
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Toon contactformulier
+Route::get('/contact', [ContactController::class, 'index'])
+    ->name('contact.index');
 
 
 // ========================================
