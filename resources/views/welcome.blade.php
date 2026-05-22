@@ -30,7 +30,7 @@
     <!-- Hero Section -->
     <section class="text-center py-20 px-6">
         <h2 class="text-5xl font-bold text-gray-800 mb-6">
-            Welkom bij de Football Community 
+            Welkom bij de Football Community
         </h2>
 
         <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
